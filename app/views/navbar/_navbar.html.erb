@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <%= link_to root_path do  %>
+    <%= image_pack_tag 'media/stylesheets/images/logo/small.png', size: '90x35', alt: 'Riempitrici Galli' %>
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav right">
+      <%= link_to "Home", root_path, class: "nav-item nav-link"%>
+      <%= link_to t('navbar.products'), prodotti_path,  class: 'nav-item nav-link' %>
+      <%= link_to t('navbar.where'), dovesiamo_path, class: 'nav-item nav-link' %>
+      <% if I18n.locale == :it%>
+        <%= link_to root_path, class: 'nav-item nav-link'  do  %>
+          <%= image_pack_tag 'media/stylesheets/images/flags/english_flag.png', size: '25x20', alt: 'english' %>
+        <% end %>
+      <% else %>
+        <%= link_to root_path , class: 'nav-item nav-link' do  %>
+          <%= image_pack_tag 'media/stylesheets/images/flags/italian_flag.png', size: '25x20', alt: 'italiano' %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</nav>
