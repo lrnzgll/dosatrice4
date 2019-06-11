@@ -11,14 +11,15 @@
       <%= link_to t('navbar.products'), prodotti_path,  class: 'nav-item nav-link' %>
       <%= link_to t('navbar.where'), dovesiamo_path, class: 'nav-item nav-link' %>
       <% if I18n.locale == :it%>
-        <%= link_to root_path, class: 'nav-item nav-link'  do  %>
-          <%= image_pack_tag 'media/stylesheets/images/flags/english_flag.png', size: '25x20', alt: 'english' %>
+        <%= link_to language_path, data: { turbolinks: false }, class: 'nav-item nav-link language-btn'  do  %>
+          <%= image_pack_tag 'media/stylesheets/images/flags/english_flag.png', size: '32x28', alt: 'english' %>
         <% end %>
       <% else %>
-        <%= link_to root_path , class: 'nav-item nav-link' do  %>
-          <%= image_pack_tag 'media/stylesheets/images/flags/italian_flag.png', size: '25x20', alt: 'italiano' %>
+        <%= link_to language_path, data: { turbolinks: false }, class: 'nav-item nav-link language-btn' do  %>
+          <%= image_pack_tag 'media/stylesheets/images/flags/italian_flag.png', size: '32x28', alt: 'italiano' %>
         <% end %>
       <% end %>
     </div>
   </div>
 </nav>
+

@@ -9,11 +9,7 @@
       <p class='text-center products-subtitle'><%= t('products.subtitle') %></p>
     </div>
     <div class='col-sm-12 margin--t-20'>
-	    <%= cl_video_tag("impianto_jbc3bj", autoplay: true, controls: true, 
-      transformation: [ height:800, 
-                        width: :auto,
-                        crop: "pad",
-                      ],
+	    <%= cl_video_tag("impianto_jbc3bj",controls: true,
       fallback_content: "Your browser does not support HTML5 video tags.", class:'responsive' )%>
     </div>
   </div>
