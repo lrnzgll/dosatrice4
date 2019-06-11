@@ -1,2 +1,2 @@
 web: bundle exec puma -C config/puma.rb
-webpack: bin/webpack-dev-server
+webpack: ./node_modules/.bin/webpack-dev-server --config config/webpack.config.js
