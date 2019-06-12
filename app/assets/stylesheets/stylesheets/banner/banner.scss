@@ -51,7 +51,7 @@
   color: white;
   span{
     display: inline-block;
-    margin-top: 90px;
+    margin-top: 110px;
     font-size: 25px;
   }
 }
@@ -77,6 +77,9 @@
     background: none;
     height: auto;
 		width: auto;
-		padding-top: 20px;
+		span{
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
   }
 }
