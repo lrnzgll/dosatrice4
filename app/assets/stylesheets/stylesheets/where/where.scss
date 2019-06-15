@@ -1,0 +1,19 @@
+.full-screen {
+  height: calc(100vh - 250px);
+}
+#map {
+  height: 600px;
+}
+
+.map{ 
+  height: 600px;
+}
+
+@media (max-width: 1050px) {
+  .full-screen{
+    height: auto;
+  }
+  .map{
+    height: auto;
+  }
+}

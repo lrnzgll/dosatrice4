@@ -3,8 +3,8 @@
 <% end %>
 
 <h1 class="text-center">Azienda Galli s.n.c.</h1>
-<div class="container-fluid">
-	<div class="row">
+<div class="container-fluid full-screen">
+	<div class="row map">
 		<div class="col-md-4 col-xs-12 item-group">
 			<p class='products-subtitle text-center'><%= t('location.one') %></p>
       <p>Via Trenca 3,</p>
@@ -15,7 +15,8 @@
       <p>email: info@galli-it.com</p>
 		</div>
 		<div class="col-md-8 col-xs-12 text-center">
-			<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=16&size=1800x1500&markers=size:small%7Ccolor:red%7C45.7337,8.82357&key=#{Rails.application.credentials[:production][:googlemapapi]}", alt: "Map" %>
+      <div id='map'>
+      </div>
 		</div>
 	</div>
 </div>
@@ -30,7 +31,10 @@
     var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Hello World!'
+    title: 'Galli s.n.c.'
     });
   }
 </script>
+
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials[:production][:googlemapapi]}&callback=initMap" %>
+
