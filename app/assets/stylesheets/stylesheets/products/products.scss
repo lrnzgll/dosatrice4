@@ -28,6 +28,10 @@ table{
   text-align: center;
 }
 
+.xl-margin--20{
+  margin: 0;
+}
+
 @media (max-width: 1050px) {
   table{
     width: 100%;
@@ -40,5 +44,8 @@ table{
   .table-info{
     font-size: 11px;
     text-align: center;
+  }
+  .xl-margin--20{
+    margin: 20px;
   }
 }
