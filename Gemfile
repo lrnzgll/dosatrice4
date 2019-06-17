@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary'
 gem "actionpack-page_caching"
+gem 'meta-tags'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
