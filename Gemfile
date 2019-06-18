@@ -17,6 +17,7 @@ gem 'webpacker'
 gem 'cloudinary'
 gem "actionpack-page_caching"
 gem 'meta-tags'
+gem 'cookies_eu'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

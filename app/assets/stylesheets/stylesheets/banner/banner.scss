@@ -56,10 +56,13 @@
   }
 }
 
-
+@media (max-width: 1500px) {
+	.banner{ height: 100vh; }
+}
 
 @media (max-width: 1050px) {
   .banner {
+		height: calc(100vh - 150px);
 		grid-template-columns: auto;
 		grid-template-rows: auto auto;
 		grid-template-areas: "message1"
