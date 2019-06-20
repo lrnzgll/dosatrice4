@@ -26,8 +26,8 @@
   a{
     color: white;
   }
-  p{
-    color: white;
+  h1{
+    color: white !important;
     text-shadow: 2px 2px black;
     line-height: 1;
   }
@@ -39,6 +39,10 @@
     margin-top: 30px;
     font-size: 25px;
   }
+}
+
+.banner-title{
+	color: white;
 }
 
 .message2 {
