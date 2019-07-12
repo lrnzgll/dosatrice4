@@ -65,7 +65,6 @@ GEM
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     builder (3.2.3)
-    byebug (11.0.1)
     cloudinary (1.9.1)
       aws_cf_signer
       rest-client
@@ -124,9 +123,6 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    pry-byebug (3.7.0)
-      byebug (~> 11.0)
-      pry (~> 0.10)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     puma (3.12.1)
@@ -235,7 +231,6 @@ DEPENDENCIES
   listen (~> 3.0.5)
   meta-tags
   pg (~> 0.21)
-  pry-byebug
   pry-rails
   puma
   rails (= 6.0.0.rc1)
@@ -253,4 +248,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
